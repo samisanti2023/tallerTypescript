@@ -2,7 +2,7 @@ import { series } from './data.js';
 
 function crearTabla() {
     // Obtener el elemento contenedor de la tabla
-    const contenedorTabla = document.getElementById('contenedor-tabla');
+    const contenedorTabla: HTMLElement = document.getElementById('contenedor-tabla')!;
 
     
     // Crear tabla y aplicar clases de Bootstrap
@@ -36,9 +36,11 @@ function crearTabla() {
     tabla.appendChild(cuerpo);
 
     // Agregar la tabla al contenedor
+    console.log("chao")
     contenedorTabla?.appendChild(tabla);
 }
 console.log("hola")
 // Llamar a la función para crear la tabla cuando se cargue el documento
 console.log(series);
+crearTabla();
 document.addEventListener('DOMContentLoaded', crearTabla);

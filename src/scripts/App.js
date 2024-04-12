@@ -20,9 +20,11 @@ function crearTabla() {
     });
     tabla.appendChild(cuerpo);
     // Agregar la tabla al contenedor
+    console.log("chao");
     contenedorTabla === null || contenedorTabla === void 0 ? void 0 : contenedorTabla.appendChild(tabla);
 }
 console.log("hola");
 // Llamar a la función para crear la tabla cuando se cargue el documento
 console.log(data_js_1.series);
+crearTabla();
 document.addEventListener('DOMContentLoaded', crearTabla);
